@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://www.61ewm.com/tbkh4/202408061700/A/?u=370 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示图片</title>
+   <style>
+       img{
+           width: 92%;
+           display: block;
+           margin: 0 auto;
+       }
+       /* 防伪图上的车牌红字：按上方预览的默认渐变参数（105°，亮度100%，描边0.35px） */
+       #zp1 {
+           position: absolute;
+           display: inline-block;
+           font-size: 8.5vw; /* 保留原有响应式尺寸和定位 */
+           font-family: 'Arial Black', 'Microsoft YaHei', 'SimHei', sans-serif;
+           font-weight: 900;
+           white-space: nowrap;
+           letter-spacing: 0.3px;
+
+           /* 参考图的暗红、亮红交替过渡 */
+           background: linear-gradient(105deg,
+               #490609 0%,
+               #73080b 20%,
+               #c51018 47%,
+               #e5242b 64%,
+               #8b0711 83%,
+               #c71620 100%
+           );
+           -webkit-background-clip: text;
+           background-clip: text;
+           -webkit-text-fill-color: transparent;
+           color: transparent;
+
+           /* 轻微深红描边，模拟图片中较厚实的字边 */
+           -webkit-text-stroke: 0.35px rgba(82, 0, 0, 0.85);
+           filter: brightness(1) drop-shadow(0.4px 0.5px 0.4px rgba(85, 0, 0, 0.32));
+       }
+body{
+    padding: 0;
+    margin: 0;
+}
+   </style>
+</head>
+<body>
+<img src="./a1.png" alt="示例图片">
+    
+<div id="zp1" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">赣A</div>
+
+
+</body></html>

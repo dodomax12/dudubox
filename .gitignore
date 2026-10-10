@@ -1,0 +1,28 @@
+# 本地抓取的页面（含真实信息），一律不发布；只放行入口页
+/*.html
+!/index.html
+
+# 原系统前端打包产物（约4MB），校园版页面未使用
+assets/index.94cb443c.js.下载
+
+# 与 a1.png 完全相同的重复图片
+assets/a1 - 副本.png
+
+# 本地临时文件
+.playwright-mcp/
+campus_page.png
+plate_preview.png
+page_roundtrip.png
+
+# 与本项目无关的误放文件
+index.md
+
+# 二维码输出（按需生成，不部署）
+qrcodes/
+
+# 本地备份
+assets/bak/
+
+# 生成工具与牌面：只在本地保留，不发布
+tools/
+plates/

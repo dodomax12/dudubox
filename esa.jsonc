@@ -1,0 +1,8 @@
+{
+  "name": "dudubox",
+  "installCommand": "",
+  "buildCommand": "",
+  "assets": {
+    "directory": "."
+  }
+}
